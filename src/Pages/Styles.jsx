@@ -1,5 +1,5 @@
 // Components
-import Nav from "../Components/Nav";
+import Nav from "../components/Nav";
 
 export default function Styles() {
   return (
