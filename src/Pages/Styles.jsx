@@ -1,3 +1,6 @@
+// Components
+import Nav from "../Components/Nav";
+
 export default function Styles() {
   return (
     <div>
@@ -13,10 +16,12 @@ export default function Styles() {
           <p className="p2">Paragraph 2</p>
           <a>Nav link</a>
           <button>Button text</button>
-          <caption>Caption</caption>
+          {/* <caption>Caption</caption> */}
         </div>
       </section>
+
       <div className="divider h-30 w-full"></div>
+
       <section className="text-left flex flex-col gap-5">
         <p>Colour</p>
         <div className="flex gap-2 ">
@@ -30,6 +35,18 @@ export default function Styles() {
           <div className="rounded-full bg-(--bg-3) w-25 h-25 border-(--divider) border"></div>
           <div className="rounded-full bg-(--text-3) w-25 h-25 border-(--divider) border"></div>
         </div>
+      </section>
+
+      <div className="divider h-30 w-full"></div>
+
+      <section className="text-left flex flex-col gap-5">
+        <p>Components</p>
+
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5">
+          <Nav blur={true} />
+          <Nav />
+        </div>
+        <div className="divider h-30 w-full text-center ">------</div>
       </section>
     </div>
   );

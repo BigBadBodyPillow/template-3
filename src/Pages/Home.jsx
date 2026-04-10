@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <>
       <div>Home</div>
-      <Link to="/Styles">Styles</Link>
+      <Link to="/styles">Styles</Link>
     </>
   );
 }

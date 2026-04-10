@@ -58,17 +58,17 @@
   }
 
   ::-moz-selection {
-    background: var(--bg-3);
+    background: var(--link);
     color: var(--text-h);
   }
 
   ::selection {
-    background: var(--bg-3);
+    background: var(--link);
     color: var(--text-h);
   }
 
   :focus-visible {
-    outline: 0.125rem solid var(--bg-3);
+    outline: 0.125rem solid var(--link);
     outline-offset: 0.125rem;
   }
 }
@@ -93,7 +93,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  scrollbar-color: var(--bg-3) transparent;
+  scrollbar-color: var(--link) transparent;
 }
 
 body {
@@ -227,10 +227,10 @@ ol {
   list-style-type: decimal;
 }
 li::marker {
-  color: var(--bg-3);
+  color: var(--link);
 }
 /* a {
-  color: var(--bg-3);
+  color: var(--link);
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-underline-offset: 0.2em;
