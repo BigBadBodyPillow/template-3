@@ -4,7 +4,6 @@ import Logo from "../assets/Logo.svg?react";
 import Arrow from "../assets/Arrow.svg?react";
 
 export default function Nav({ blur }) {
-  console.log(blur);
   return (
     <>
       <nav

@@ -1,5 +1,6 @@
 // Components
 import Nav from "../components/Nav";
+import NavMobile from "../components/NavMobile";
 
 export default function Styles() {
   return (
@@ -46,8 +47,17 @@ export default function Styles() {
           <Nav blur={true} />
           <Nav />
         </div>
-        <div className="divider h-30 w-full text-center ">------</div>
+
+        <div className="divider h-10 w-full flex justify-center items-center ">
+          {/* ------ */}
+        </div>
+
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
+          <NavMobile />
+        </div>
       </section>
+
+      <div className="divider h-30 w-full"></div>
     </div>
   );
 }

@@ -245,3 +245,7 @@ hr {
   border-block-start: thin solid var(--divider);
   margin-block: var(--space-lg);
 }
+
+.open {
+  max-height: 100%;
+}
