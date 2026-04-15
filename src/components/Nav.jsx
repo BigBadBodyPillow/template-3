@@ -1,7 +1,7 @@
 import React from "react";
 
 import Logo from "../assets/Logo.svg?react";
-import Arrow from "../assets/Arrow.svg?react";
+import TextLink from "./TextLink";
 
 export default function Nav({ blur }) {
   return (
@@ -15,9 +15,7 @@ export default function Nav({ blur }) {
           <a href="#">Journal</a>
           <a href="#">About</a>
           <a href="#">Careers</a>
-          <a href="#" className="flex gap-1">
-            Get Started <Arrow />
-          </a>
+          <TextLink link="#" />
         </div>
       </nav>
     </>

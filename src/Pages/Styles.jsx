@@ -1,6 +1,9 @@
 // Components
+import ButtonPrimary from "../components/ButtonPrimary";
+import ButtonSecondary from "../components/ButtonSecondary";
 import Nav from "../components/Nav";
 import NavMobile from "../components/NavMobile";
+import TextLink from "../components/TextLink";
 
 export default function Styles() {
   return (
@@ -23,6 +26,7 @@ export default function Styles() {
 
       <div className="divider h-30 w-full"></div>
 
+      {/* colours */}
       <section className="text-left flex flex-col gap-5">
         <p>Colour</p>
         <div className="flex gap-2 ">
@@ -40,20 +44,42 @@ export default function Styles() {
 
       <div className="divider h-30 w-full"></div>
 
+      {/* components */}
       <section className="text-left flex flex-col gap-5">
         <p>Components</p>
 
+        {/* nav */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5">
           <Nav blur={true} />
           <Nav />
         </div>
 
-        <div className="divider h-10 w-full flex justify-center items-center ">
-          {/* ------ */}
-        </div>
+        <div className="divider "></div>
 
+        {/* mobile nav */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
           <NavMobile />
+        </div>
+
+        <div className="divider "></div>
+
+        {/* primary button */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <ButtonPrimary />
+        </div>
+
+        <div className="divider "></div>
+
+        {/* secondary button */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <ButtonSecondary />
+        </div>
+
+        <div className="divider "></div>
+
+        {/* links */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <TextLink link="#" />
         </div>
       </section>
 

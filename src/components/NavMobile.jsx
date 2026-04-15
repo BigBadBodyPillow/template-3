@@ -30,7 +30,7 @@ export default function NavMobile() {
 
         <div className={`${open ? "pt-7.5" : ""}`}>
           <div
-            className={`menu-content max-h-0 overflow-hidden drop-shadow-lg  drop-shadow-cyan-500/50 ${open ? " open" : ""}`}
+            className={`max-h-0 overflow-hidden shadow-hover ${open ? " open" : ""}`}
           >
             <ul className="list-none! p-0">
               <li className="border-(--divider) border-b py-6">
@@ -59,7 +59,7 @@ export default function NavMobile() {
                 </a>
               </li>
               <li className="border-(--divider) border-b py-6">
-                <button className=" block p-4  bg-(--text) text-(--bg) w-full text-center!">
+                <button className=" block p-4  bg-(--text) text-(--bg) h-13 w-full text-center!">
                   Get Started
                 </button>
               </li>
