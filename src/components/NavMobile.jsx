@@ -14,7 +14,7 @@ export default function NavMobile() {
   return (
     <>
       <nav className={`p-5 flex flex-col`}>
-        <div className="flex justify-between ">
+        <div className="flex justify-between p-5">
           <Logo alt="Aetherfield company logo" />
           {/* <div className="flex gap-5">
           <a href="#">Product</a>
@@ -28,44 +28,45 @@ export default function NavMobile() {
           <button onClick={toggleOpen}>{open ? <Close /> : <Plus />}</button>
         </div>
 
-        <div className={`${open ? "pt-7.5" : ""}`}>
-          <div
-            className={`max-h-0 overflow-hidden shadow-hover ${open ? " open" : ""}`}
-          >
-            <ul className="list-none! p-0">
-              <li className="border-(--divider) border-b py-6">
-                <a href="#" className=" block ">
-                  <h4 className="p-0! m-0!">Product</h4>
-                </a>
-              </li>
-              <li className="border-(--divider) border-b py-6">
-                <a href="#" className=" block ">
-                  <h4 className="p-0! m-0!">Journal</h4>
-                </a>
-              </li>
-              <li className="border-(--divider) border-b py-6">
-                <a href="#" className=" block">
-                  <h4 className="p-0! m-0!">Projects</h4>
-                </a>
-              </li>
-              <li className="border-(--divider) border-b py-6">
-                <a href="#" className=" block">
-                  <h4 className="p-0! m-0!">About</h4>
-                </a>
-              </li>
-              <li className="border-(--divider) border-b py-6">
-                <a href="#" className=" block ">
-                  <h4 className="p-0! m-0!">Careers</h4>
-                </a>
-              </li>
-              <li className="border-(--divider) border-b py-6">
-                <button className=" block p-4  bg-(--text) text-(--bg) h-13 w-full text-center!">
-                  Get Started
-                </button>
-              </li>
-            </ul>
-          </div>
+        {/* <div> */}
+        {/* <div className={`${open ? "pt-7.5" : ""}`}> */}
+        <div
+          className={`max-h-0 overflow-hidden shadow-hover px-5 ${open ? " open" : ""}`}
+        >
+          <ul className="list-none! p-0">
+            <li className="border-(--divider) border-b py-6">
+              <a href="#" className=" block ">
+                <h4 className="p-0! m-0!">Product</h4>
+              </a>
+            </li>
+            <li className="border-(--divider) border-b py-6">
+              <a href="#" className=" block ">
+                <h4 className="p-0! m-0!">Journal</h4>
+              </a>
+            </li>
+            <li className="border-(--divider) border-b py-6">
+              <a href="#" className=" block">
+                <h4 className="p-0! m-0!">Projects</h4>
+              </a>
+            </li>
+            <li className="border-(--divider) border-b py-6">
+              <a href="#" className=" block">
+                <h4 className="p-0! m-0!">About</h4>
+              </a>
+            </li>
+            <li className="border-(--divider) border-b py-6">
+              <a href="#" className=" block ">
+                <h4 className="p-0! m-0!">Careers</h4>
+              </a>
+            </li>
+            <li className="border-(--divider) border-b py-6">
+              <button className=" block p-4  bg-(--text) text-(--bg) h-13 w-full text-center!">
+                Get Started
+              </button>
+            </li>
+          </ul>
         </div>
+        {/* </div> */}
       </nav>
     </>
   );

@@ -1,4 +1,5 @@
 // Components
+import ArticleLarge from "../components/ArticleLarge";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import Nav from "../components/Nav";
@@ -80,6 +81,21 @@ export default function Styles() {
         {/* links */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
           <TextLink link="#" />
+        </div>
+
+        <div className="divider "></div>
+
+        {/* Article Large */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <ArticleLarge
+            link=""
+            img=""
+            imgAlt=""
+            title="How to Build a Climate-Ready Data Stack"
+            details="Tooling"
+            duration="4 min"
+            description="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
+          />
         </div>
       </section>
 
