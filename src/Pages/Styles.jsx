@@ -3,9 +3,11 @@ import ArticleLarge from "../components/ArticleLarge";
 import ArticleSmall from "../components/ArticleSmall";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
+import Container from "../components/Container";
 import MetaData from "../components/MetaData";
 import Nav from "../components/Nav";
 import NavMobile from "../components/NavMobile";
+import TeamMembers from "../components/TeamMembers";
 import TextLink from "../components/TextLink";
 
 export default function Styles() {
@@ -57,35 +59,25 @@ export default function Styles() {
           <Nav />
         </div>
 
-        <div className="divider "></div>
-
         {/* mobile nav */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
           <NavMobile />
         </div>
-
-        <div className="divider "></div>
 
         {/* primary button */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
           <ButtonPrimary />
         </div>
 
-        <div className="divider "></div>
-
         {/* secondary button */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
           <ButtonSecondary />
         </div>
 
-        <div className="divider "></div>
-
         {/* links */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
           <TextLink link="#" />
         </div>
-
-        <div className="divider "></div>
 
         {/* Article Large */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
@@ -99,8 +91,6 @@ export default function Styles() {
             description="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
           />
         </div>
-
-        <div className="divider "></div>
 
         {/* Article Small */}
         <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-165">
@@ -124,9 +114,37 @@ export default function Styles() {
         </div>
 
         {/* Meta Data */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-row gap-5 w-fit">
-          <MetaData desktop={true} date="July 1, 2025" author="Al Gorithm" />
-          <MetaData desktop={false} date="July 1, 2025" author="Al Gorithm" />
+        <div className="border-dashed border border-red-400 p-5 flex gap-5 w-fit">
+          <MetaData date="July 1, 2025" author="Al Gorithm" />
+          <MetaData mobile={true} date="July 1, 2025" author="Al Gorithm" />
+        </div>
+
+        {/* Team Members */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5">
+          <TeamMembers
+            name="John McClelland"
+            title="Director of Technology"
+            email="jmcclelland@aetherfield.com"
+          />
+          <TeamMembers
+            name="John McClelland"
+            title="Director of Technology"
+            email="jmcclelland@aetherfield.com"
+            mobile={true}
+          />
+        </div>
+
+        <div className="border-dashed border border-red-400 p-5 flex gap-5 w-fit">
+          <Container
+            title="Clarity drives action"
+            description="We believe better decisions start with better data—measured, visible, and trusted."
+          />
+
+          <Container
+            title="Clarity drives action"
+            description="We believe better decisions start with better data—measured, visible, and trusted."
+            background="#f6f8fb"
+          />
         </div>
       </section>
 
