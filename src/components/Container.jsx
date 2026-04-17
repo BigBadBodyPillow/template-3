@@ -1,6 +1,6 @@
 import React from "react";
 
-import ArrowInCircle from "../assets/ArrowInCircle.svg?react";
+import ArrowInCircle from "~/assets/ArrowInCircle.svg?react";
 
 export default function Container({ title, description, background }) {
   console.log(background);

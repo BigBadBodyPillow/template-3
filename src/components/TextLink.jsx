@@ -1,6 +1,6 @@
 import React from "react";
 
-import Arrow from "../assets/Arrow.svg?react";
+import Arrow from "~/assets/Arrow.svg?react";
 
 export default function TextLink(link) {
   return (

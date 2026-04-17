@@ -1,14 +1,14 @@
 // Components
-import ArticleLarge from "../components/ArticleLarge";
-import ArticleSmall from "../components/ArticleSmall";
-import ButtonPrimary from "../components/ButtonPrimary";
-import ButtonSecondary from "../components/ButtonSecondary";
-import Container from "../components/Container";
-import MetaData from "../components/MetaData";
-import Nav from "../components/Nav";
-import NavMobile from "../components/NavMobile";
-import TeamMembers from "../components/TeamMembers";
-import TextLink from "../components/TextLink";
+import ArticleLarge from "~/components/ArticleLarge";
+import ArticleSmall from "~/components/ArticleSmall";
+import ButtonPrimary from "~/components/ButtonPrimary";
+import ButtonSecondary from "~/components/ButtonSecondary";
+import Container from "~/components/Container";
+import MetaData from "~/components/MetaData";
+import Nav from "~/components/Nav";
+import NavMobile from "~/components/NavMobile";
+import TeamMembers from "~/components/TeamMembers";
+import TextLink from "~/components/TextLink";
 
 export default function Styles() {
   return (

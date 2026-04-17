@@ -1,5 +1,5 @@
 import React from "react";
-import Bullet from "../assets/Bullet.svg?react";
+import Bullet from "~/assets/Bullet.svg?react";
 
 export default function ButtonPrimary() {
   return (

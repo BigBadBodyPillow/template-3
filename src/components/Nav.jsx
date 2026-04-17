@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../assets/Logo.svg?react";
+import Logo from "~/assets/Logo.svg?react";
 import TextLink from "./TextLink";
 
 export default function Nav({ blur }) {
