@@ -1,14 +1,16 @@
 // Components
 import ArticleLarge from "../components/ArticleLarge";
+import ArticleSmall from "../components/ArticleSmall";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
+import MetaData from "../components/MetaData";
 import Nav from "../components/Nav";
 import NavMobile from "../components/NavMobile";
 import TextLink from "../components/TextLink";
 
 export default function Styles() {
   return (
-    <div>
+    <div className="px-5 py-7.5">
       <section className="text-left flex flex-col gap-5">
         <p>Texy Styles</p>
         <div className="flex flex-col gap-10 ">
@@ -96,6 +98,35 @@ export default function Styles() {
             duration="4 min"
             description="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
           />
+        </div>
+
+        <div className="divider "></div>
+
+        {/* Article Small */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-165">
+          <ArticleSmall
+            link=""
+            img=""
+            imgAlt=""
+            title="How to Build a Climate-Ready Data Stack"
+            details="Tooling"
+            duration="4 min"
+          />
+          <ArticleSmall
+            link=""
+            img=""
+            imgAlt=""
+            title="How to Build a Climate-Ready Data Stack"
+            details="Tooling"
+            duration="4 min"
+            mobile={true}
+          />
+        </div>
+
+        {/* Meta Data */}
+        <div className="border-dashed border border-red-400 p-5 flex flex-row gap-5 w-fit">
+          <MetaData desktop={true} date="July 1, 2025" author="Al Gorithm" />
+          <MetaData desktop={false} date="July 1, 2025" author="Al Gorithm" />
         </div>
       </section>
 
