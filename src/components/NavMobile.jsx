@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import Logo from "../assets/Logo.svg?react";
-import Plus from "../assets/Plus.svg?react";
-import Close from "../assets/Close.svg?react";
+import Logo from "~/assets/Logo.svg?react";
+import Plus from "~/assets/Plus.svg?react";
+import Close from "~/assets/Close.svg?react";
 
 export default function NavMobile() {
   const [open, setOpen] = useState(0);

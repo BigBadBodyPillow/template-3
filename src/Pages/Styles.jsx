@@ -9,6 +9,7 @@ import Nav from "~/components/Nav";
 import NavMobile from "~/components/NavMobile";
 import TeamMembers from "~/components/TeamMembers";
 import TextLink from "~/components/TextLink";
+import RoleItem from "../components/RoleItem";
 
 export default function Styles() {
   return (
@@ -54,33 +55,33 @@ export default function Styles() {
         <p>Components</p>
 
         {/* nav */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5">
           <Nav blur={true} />
           <Nav />
         </div>
 
         {/* mobile nav */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
           <NavMobile />
         </div>
 
         {/* primary button */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
-          <ButtonPrimary />
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <ButtonPrimary text="Request a demo" />
         </div>
 
         {/* secondary button */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
-          <ButtonSecondary />
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <ButtonSecondary text="Request a demo" />
         </div>
 
         {/* links */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-fit">
           <TextLink link="#" />
         </div>
 
         {/* Article Large */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-fit">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-fit">
           <ArticleLarge
             link=""
             img=""
@@ -93,7 +94,7 @@ export default function Styles() {
         </div>
 
         {/* Article Small */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5 w-165">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-165">
           <ArticleSmall
             link=""
             img=""
@@ -114,13 +115,13 @@ export default function Styles() {
         </div>
 
         {/* Meta Data */}
-        <div className="border-dashed border border-red-400 p-5 flex gap-5 w-fit">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex gap-5 w-fit">
           <MetaData date="July 1, 2025" author="Al Gorithm" />
           <MetaData mobile={true} date="July 1, 2025" author="Al Gorithm" />
         </div>
 
         {/* Team Members */}
-        <div className="border-dashed border border-red-400 p-5 flex flex-col gap-5">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5">
           <TeamMembers
             name="John McClelland"
             title="Director of Technology"
@@ -134,7 +135,7 @@ export default function Styles() {
           />
         </div>
 
-        <div className="border-dashed border border-red-400 p-5 flex gap-5 w-fit">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex gap-5 w-fit">
           <Container
             title="Clarity drives action"
             description="We believe better decisions start with better data—measured, visible, and trusted."
@@ -143,7 +144,23 @@ export default function Styles() {
           <Container
             title="Clarity drives action"
             description="We believe better decisions start with better data—measured, visible, and trusted."
-            background="#f6f8fb"
+            background="--bg-2"
+          />
+        </div>
+
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-fit">
+          <RoleItem
+            position="Data Scientist"
+            location="Denver, CO"
+            employmentBasis="Full-time"
+            description="Help build the intelligence layer for climate action. You'll turn complex sustainability data into clear, actionable insights for enterprise teams."
+          />
+          <RoleItem
+            position="Data Scientist"
+            location="Denver, CO"
+            employmentBasis="Full-time"
+            description="Help build the intelligence layer for climate action. You'll turn complex sustainability data into clear, actionable insights for enterprise teams."
+            mobile={true}
           />
         </div>
       </section>
