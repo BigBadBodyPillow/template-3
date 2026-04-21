@@ -10,6 +10,7 @@ import NavMobile from "~/components/NavMobile";
 import TeamMembers from "~/components/TeamMembers";
 import TextLink from "~/components/TextLink";
 import RoleItem from "../components/RoleItem";
+import CalltoAction from "../components/CalltoAction";
 
 export default function Styles() {
   return (
@@ -33,18 +34,18 @@ export default function Styles() {
       <div className="divider h-30 w-full"></div>
 
       {/* colours */}
-      <section className="text-left flex flex-col gap-5">
+      <section className="text-left flex  flex-col gap-5">
         <p>Colour</p>
-        <div className="flex gap-2 ">
-          <div className="rounded-full bg-(--text) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--text-2) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--divider) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--bg-2) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--bg) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-linear-to-b from-(--gradient-colour-1) to-(--gradient-colour-2) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--link) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--bg-3) w-25 h-25 border-(--divider) border"></div>
-          <div className="rounded-full bg-(--text-3) w-25 h-25 border-(--divider) border"></div>
+        <div className="flex gap-2 flex-wrap">
+          <div className="rounded-full bg-(--text) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--text-2) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--divider) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--bg-2) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--bg) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-linear-to-b from-(--gradient-colour-1) to-(--gradient-colour-2) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--link) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--bg-3) w-25 h-25 aspect-square border-(--divider) border"></div>
+          <div className="rounded-full bg-(--text-3) w-25 h-25 aspect-square border-(--divider) border"></div>
         </div>
       </section>
 
@@ -56,13 +57,13 @@ export default function Styles() {
 
         {/* nav */}
         <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5">
-          <Nav blur={true} />
-          <Nav />
-        </div>
-
-        {/* mobile nav */}
-        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 max-w-103.75 ">
-          <NavMobile />
+          <div className="max-md:hidden block">
+            <Nav blur={true} />
+            <Nav />
+          </div>
+          <div className="hidden max-md:block">
+            <NavMobile />
+          </div>
         </div>
 
         {/* primary button */}
@@ -94,7 +95,7 @@ export default function Styles() {
         </div>
 
         {/* Article Small */}
-        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 w-165">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 max-w-165">
           <ArticleSmall
             link=""
             img=""
@@ -103,7 +104,7 @@ export default function Styles() {
             details="Tooling"
             duration="4 min"
           />
-          <ArticleSmall
+          {/* <ArticleSmall
             link=""
             img=""
             imgAlt=""
@@ -111,13 +112,13 @@ export default function Styles() {
             details="Tooling"
             duration="4 min"
             mobile={true}
-          />
+          /> */}
         </div>
 
         {/* Meta Data */}
         <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex gap-5 w-fit">
           <MetaData date="July 1, 2025" author="Al Gorithm" />
-          <MetaData mobile={true} date="July 1, 2025" author="Al Gorithm" />
+          {/* <MetaData mobile={true} date="July 1, 2025" author="Al Gorithm" /> */}
         </div>
 
         {/* Team Members */}
@@ -127,15 +128,15 @@ export default function Styles() {
             title="Director of Technology"
             email="jmcclelland@aetherfield.com"
           />
-          <TeamMembers
+          {/* <TeamMembers
             name="John McClelland"
             title="Director of Technology"
             email="jmcclelland@aetherfield.com"
             mobile={true}
-          />
+          /> */}
         </div>
 
-        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex gap-5 w-fit">
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex gap-5 w-fit max-md:flex-col">
           <Container
             title="Clarity drives action"
             description="We believe better decisions start with better data—measured, visible, and trusted."
@@ -155,12 +156,19 @@ export default function Styles() {
             employmentBasis="Full-time"
             description="Help build the intelligence layer for climate action. You'll turn complex sustainability data into clear, actionable insights for enterprise teams."
           />
-          <RoleItem
+          {/* <RoleItem
             position="Data Scientist"
             location="Denver, CO"
             employmentBasis="Full-time"
             description="Help build the intelligence layer for climate action. You'll turn complex sustainability data into clear, actionable insights for enterprise teams."
             mobile={true}
+          /> */}
+        </div>
+
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 ">
+          <CalltoAction
+            text="Ready to operationalize your sustainability goals?"
+            buttonText="Request a demo"
           />
         </div>
       </section>

@@ -2,7 +2,7 @@ import React from "react";
 import ButtonSecondary from "~/components/ButtonSecondary";
 
 export default function RoleItem({
-  mobile,
+  // mobile,
   position,
   location,
   employmentBasis,
@@ -10,8 +10,10 @@ export default function RoleItem({
 }) {
   return (
     <>
-      <div className={` flex p-10 gap-6 ${mobile ? " flex-col" : ""}`}>
-        <div className={`flex flex-col ${mobile ? " w-71.75 " : "w-154"}`}>
+      <div className={` flex p-10 gap-6 max-md:flex-col`}>
+        {/* <div className={` flex p-10 gap-6 ${mobile ? " flex-col" : ""}`}> */}
+        <div className={`flex flex-col max-w-154 max-md:w-71.75 `}>
+          {/* <div className={`flex flex-col ${mobile ? " w-71.75 " : "w-154"}`}> */}
           <div className="flex flex-col gap-2">
             <p>{position}</p>
             <div className=" flex gap-2 text-(--text-2)!">
@@ -20,7 +22,7 @@ export default function RoleItem({
               <p className="caption">{location}</p>
             </div>
           </div>
-          <p className="p2 mt-6!">{description}</p>
+          <p className="p2 mt-6! text-pretty">{description}</p>
         </div>
         <div className="w-25! ">
           <ButtonSecondary text="View role" />

@@ -1,11 +1,16 @@
 import React from "react";
 
-export default function MetaData({ mobile, date, author }) {
+export default function MetaData({
+  // mobile,
+  date,
+  author,
+}) {
   return (
     <>
-      <div
+      <div className={`p-5 flex gap-10 flex-col max-xs:flex-row `}>
+        {/* <div
         className={`p-5 flex gap-10 ${mobile ? " flex-row " : " flex-col "}`}
-      >
+      > */}
         <div className="flex flex-col gap-1">
           <p className="font-(family-name:--heading)! text-(--text-2)">
             Published
