@@ -11,6 +11,7 @@ import TeamMembers from "~/components/TeamMembers";
 import TextLink from "~/components/TextLink";
 import RoleItem from "../components/RoleItem";
 import CalltoAction from "../components/CalltoAction";
+import Footer from "../components/Footer";
 
 export default function Styles() {
   return (
@@ -170,6 +171,10 @@ export default function Styles() {
             text="Ready to operationalize your sustainability goals?"
             buttonText="Request a demo"
           />
+        </div>
+
+        <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 ">
+          <Footer />
         </div>
       </section>
 

@@ -12,7 +12,7 @@ export default function RoleItem({
     <>
       <div className={` flex p-10 gap-6 max-md:flex-col`}>
         {/* <div className={` flex p-10 gap-6 ${mobile ? " flex-col" : ""}`}> */}
-        <div className={`flex flex-col max-w-154 max-md:w-71.75 `}>
+        <div className={`flex flex-col max-w-154 max-md:max-w-71.75 `}>
           {/* <div className={`flex flex-col ${mobile ? " w-71.75 " : "w-154"}`}> */}
           <div className="flex flex-col gap-2">
             <p>{position}</p>
