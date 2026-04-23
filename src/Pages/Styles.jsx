@@ -13,11 +13,31 @@ import RoleItem from "../components/RoleItem";
 import CalltoAction from "../components/CalltoAction";
 import Footer from "../components/Footer";
 
+// assets
+import Up from "../assets/Up.svg?react";
+import Down from "../assets/Down.svg?react";
+import PieChart from "../assets/PieChart.svg?react";
+import Target from "../assets/Target.svg?react";
+import System from "../assets/System.svg?react";
+import Sticker1 from "../assets/Sticker1.png";
+import Sticker2 from "../assets/Sticker2.png";
+//image
+import Image1 from "../assets/Photos/image1.png";
+import Image2 from "../assets/Photos/image2.png";
+import Image3 from "../assets/Photos/image3.png";
+import Image4 from "../assets/Photos/image4.png";
+import Image5 from "../assets/Photos/image5.png";
+import Image6 from "../assets/Photos/image6.png";
+import Image7 from "../assets/Photos/image7.png";
+import Image8 from "../assets/Photos/image8.png";
+import Image9 from "../assets/Photos/image9.png";
+import Image10 from "../assets/Photos/image10.png";
+
 export default function Styles() {
   return (
     <div className="px-5 py-7.5">
-      <section className="text-left flex flex-col gap-5">
-        <p>Texy Styles</p>
+      <section className="text-left flex flex-col gap-5 border-t border-(--divider)">
+        <p className="py-6">Texy Styles</p>
         <div className="flex flex-col gap-10 ">
           <h1>Header 1</h1>
           <h2>Header 2</h2>
@@ -35,8 +55,8 @@ export default function Styles() {
       <div className="divider h-30 w-full"></div>
 
       {/* colours */}
-      <section className="text-left flex  flex-col gap-5">
-        <p>Colour</p>
+      <section className="text-left flex  flex-col gap-5 border-t border-(--divider)">
+        <p className="py-6">Colour</p>
         <div className="flex gap-2 flex-wrap">
           <div className="rounded-full bg-(--text) w-25 h-25 aspect-square border-(--divider) border"></div>
           <div className="rounded-full bg-(--text-2) w-25 h-25 aspect-square border-(--divider) border"></div>
@@ -53,8 +73,8 @@ export default function Styles() {
       <div className="divider h-30 w-full"></div>
 
       {/* components */}
-      <section className="text-left flex flex-col gap-5">
-        <p>Components</p>
+      <section className="text-left flex flex-col gap-5 border-t border-(--divider)">
+        <p className="py-6">Components</p>
 
         {/* nav */}
         <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5">
@@ -175,6 +195,95 @@ export default function Styles() {
 
         <div className="border-dashed border rounded-[5px] border-red-400 p-5 flex flex-col gap-5 ">
           <Footer />
+        </div>
+      </section>
+
+      <div className="divider h-30 w-full"></div>
+
+      {/* assets */}
+      <section className="text-left flex flex-col gap-5 border-t border-(--divider)">
+        <p className="py-6">Assets</p>
+        <div className="border-dashed border rounded-[5px] border-red-400 flex p-5 gap-5 w-fit">
+          <Up />
+          <Down />
+          <PieChart />
+          <Target />
+          <System />
+        </div>
+
+        <img src={Sticker1} alt="Sticker 1" className="max-w-116.25" />
+        <img src={Sticker2} alt="Sticker 2" className="max-w-116.25" />
+      </section>
+
+      <div className="divider h-30 w-full"></div>
+
+      {/* Photo links */}
+      <section className="text-left flex flex-col gap-18.5 border-t border-(--divider)">
+        <p className="py-6">Photo Links</p>
+        <div className="flex gap-5 ">
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image1} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image2} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image3} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image4} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image5} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+        </div>
+
+        <div className="flex gap-5 ">
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image6} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image7} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image8} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image9} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
+          <div className="flex flex-1 flex-col gap-1.75">
+            <img src={Image10} alt="image" className="w-full h-full max-h-64" />
+            <a href="" className="underline">
+              Link
+            </a>
+          </div>
         </div>
       </section>
 
