@@ -35,7 +35,7 @@ import Image10 from "../assets/Photos/image10.png";
 
 export default function Styles() {
   return (
-    <div className="px-5 py-7.5">
+    <div className="px-5 py-7.5 bg-red-400">
       <section className="text-left flex flex-col gap-5 border-t border-(--divider)">
         <p className="py-6">Texy Styles</p>
         <div className="flex flex-col gap-10 ">

@@ -13,7 +13,10 @@ export default function NavMobile() {
 
   return (
     <>
-      <nav className={`p-5 flex flex-col`}>
+      <nav
+        // p-5
+        className={`flex flex-col backdrop-blur-3xl ${open ? "bg-(--bg)" : ""}`}
+      >
         <div className="flex justify-between p-5">
           <Logo alt="Aetherfield company logo" />
           {/* <div className="flex gap-5">
