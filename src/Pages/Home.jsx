@@ -8,9 +8,9 @@ import ButtonPrimary from "../components/ButtonPrimary";
 // assets
 import Hero from "../assets/Hero image.png";
 import HeroMedium from "../assets/Hero image-1.png";
-import Feature from "../assets/Feature image.png";
-import FeatureMedium from "../assets/Feature image-1.png";
-import FeatureSmall from "../assets/Feature image-2.png";
+import Feature from "../assets/Feature Image.png";
+import FeatureMedium from "../assets/Feature Image-1.png";
+import FeatureSmall from "../assets/Feature Image-2.png";
 
 export default function Home() {
   return (
