@@ -56,7 +56,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   ::-moz-selection {
@@ -264,3 +264,17 @@ img:not([src]) {
   object-fit: contain;
   background-size: 10%;
 }
+
+/* .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient-colour-1),
+    var(--gradient-colour-2)
+  );
+} */
