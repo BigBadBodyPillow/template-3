@@ -177,7 +177,8 @@ a:hover {
   text-underline-offset: 0.2em;
 }
 
-button {
+button,
+a {
   cursor: pointer;
   font-family: var(--mono);
   font-weight: 500;
