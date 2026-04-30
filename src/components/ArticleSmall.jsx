@@ -12,7 +12,8 @@ export default function ArticleSmall({
   return (
     <>
       <article
-        className={`group py-6 w-full border-(--divider) border-y! max-sm:max-w-93.75 `}
+        className={`group py-6 w-full border-(--divider) border-y! max-sm:max-w-full `}
+        // className={`group py-6 w-full border-(--divider) border-y! max-sm:max-w-93.75 `}
         // className={`group py-6 w-full border-(--divider) border-y! ${mobile ? " max-w-93.75 " : ""} `}
       >
         <a
@@ -24,7 +25,7 @@ export default function ArticleSmall({
           <img
             src={img}
             alt={imgAlt || "no image loaded"}
-            className={`w-41.25 h-25 border-none! flex justify-center items-center max-sm:w-full max-sm:h-[227.27px]`}
+            className={`w-41.25 h-25 border-none! flex justify-center items-center max-sm:w-full max-sm:h-[227.27px] select-none!`}
             // className={`w-41.25 h-25 border-none! flex justify-center items-center ${mobile ? " w-full h-[227.27px]" : ""}`}
             draggable="false"
           />

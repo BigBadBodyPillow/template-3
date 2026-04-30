@@ -279,3 +279,23 @@ img:not([src]) {
     var(--gradient-colour-2)
   );
 } */
+
+.sticker {
+  user-select: none;
+  pointer-events: none;
+  /* absolute -top-5 left-[28%] w-100  */
+  &.journal {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-95%) rotate(calc(10deg * -1));
+  }
+
+  /* tailwind md */
+  @media (width < 48rem /* 768px */) {
+    &.journal {
+      top: -55px;
+      transform: translateX(-70%) rotate(calc(10deg * -1));
+    }
+  }
+}

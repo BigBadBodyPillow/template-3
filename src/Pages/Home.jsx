@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import NavMobile from "../components/NavMobile";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
+import ArticleSmall from "../components/ArticleSmall";
 
 // assets
 import Hero from "../assets/Hero image.png";
@@ -14,10 +15,16 @@ import FeatureMedium from "../assets/Feature Image-1.png";
 import FeatureSmall from "../assets/Feature Image-2.png";
 import ValuesBackground from "../assets/ValuesBackground.png";
 import CaseStudy from "../assets/CaseStudy.png";
+import Climate from "../assets/ArticleThumbnails/HowToBuildAClimate-ReadyDataStack.png";
+import Sustainability from "../assets/ArticleThumbnails/SustainabilityIsntaSideProject.png";
+import Aetherfield from "../assets/ArticleThumbnails/InsideTheAetherfieldModel.png";
+import Testimonial from "../assets/Testimonial.png";
+import Sticker2 from "../assets/Sticker2.png";
 
 // icons
 import Up from "../assets/Up.svg?react";
 import System from "../assets/System.svg?react";
+import Quotation from "../assets/Quotation.svg?react";
 
 export default function Home() {
   return (
@@ -187,6 +194,75 @@ export default function Home() {
             </div>
             <ButtonSecondary text="Read case study" />
           </div>
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section className="flex flex-col px-5 max-md:pt-10 max-sm:pt-0 items-center gap-10 relative">
+        <h4 className="my-0!">From the journal</h4>
+
+        <div className="flex flex-col max-w-155 items-center gap-6">
+          <div>
+            <ArticleSmall
+              link=""
+              img={Climate}
+              imgAlt="Article Thumbnail Image"
+              title="How to Build a Climate-Ready Data Stack"
+              details="Insights"
+              duration=" 4 min"
+            />
+            <ArticleSmall
+              link=""
+              img={Sustainability}
+              imgAlt="Article Thumbnail Image"
+              title="Sustainability Isn’t a Side Project: Making Impact Operational"
+              details="Strategy"
+              duration="7 min"
+            />
+            <ArticleSmall
+              link=""
+              img={Aetherfield}
+              imgAlt="Article Thumbnail Image"
+              title="Inside the Aetherfield Model: How We Turn Data Into Action"
+              details="Insights"
+              duration="5 min"
+            />
+          </div>
+
+          <ButtonSecondary text="View all articles" link="" />
+        </div>
+        <img
+          src={Sticker2}
+          className="sticker journal z-10 max-sm:hidden"
+          // -rotate-10
+          draggable="false"
+        />
+      </section>
+
+      {/* Testimonial */}
+      <section className={` px-5 py-30 flex justify-center`}>
+        <div className="max-w-310 flex max-sm:flex-col items-center gap-4  max-sm:gap-6 justify-center ">
+          {/* <div className="flex gap-4 items-center  w-full"> */}
+          <img
+            src={Testimonial}
+            alt="Stylized blue duotone portrait of a person facing the camera with arms crossed select-none!"
+            className="h-full max-w-153 w-full"
+          />
+          <div className="flex-1 h-96 flex justify-center">
+            <div className="flex flex-col w-100.5 max-sm:w-full justify-between">
+              <Quotation className="w-6! h-5!" />
+              <h4>
+                We finally moved past spreadsheets and guesswork. Now we have
+                real data to guide real decisions.
+              </h4>
+
+              <div className="flex flex-col  gap-2">
+                <p>Elliot Williams</p>
+                <p className="p2">Head of Sustainability, Flux Materials</p>
+              </div>
+            </div>
+          </div>
+          {/* </div> */}
         </div>
       </section>
     </>
