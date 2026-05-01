@@ -10,7 +10,11 @@ export default function Nav({ blur }) {
       <nav
         className={`flex justify-between p-5 ${blur ? " backdrop-blur-3xl" : ""}`}
       >
-        <Logo alt="Aetherfield company logo" />
+        <Link to="/home">
+          {/* <h4 className="p-0! m-0!">Journal</h4> */}
+          <Logo alt="Aetherfield company logo" />
+        </Link>
+        {/* <Logo alt="Aetherfield company logo" /> */}
         <div className="flex gap-5">
           <a href="#">Product</a>
           {/* <a href="#">Journal</a> */}

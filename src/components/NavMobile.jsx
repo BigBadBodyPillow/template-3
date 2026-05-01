@@ -19,7 +19,10 @@ export default function NavMobile() {
         className={`flex flex-col backdrop-blur-3xl ${open ? "bg-(--bg)" : ""}`}
       >
         <div className="flex justify-between p-5">
-          <Logo alt="Aetherfield company logo" />
+          <Link to="/home">
+            {/* <h4 className="p-0! m-0!">Journal</h4> */}
+            <Logo alt="Aetherfield company logo" />
+          </Link>
           {/* <div className="flex gap-5">
           <a href="#">Product</a>
           <a href="#">Journal</a>

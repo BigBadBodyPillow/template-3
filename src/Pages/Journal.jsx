@@ -7,6 +7,7 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import ArticleSmall from "../components/ArticleSmall";
 import Footer from "../components/Footer";
+import ArticleLarge from "../components/ArticleLarge";
 
 // assets
 // import Hero from "../assets/Hero image.png";
@@ -22,6 +23,12 @@ import Footer from "../components/Footer";
 // import Testimonial from "../assets/Testimonial.png";
 // import Sticker2 from "../assets/Sticker2.png";
 import JournalIntro from "../assets/JournalIntro.png";
+import FromSpreadsheetstoSystems from "../assets/ArticleThumbnails/FromSpreadsheetstoSystems.png";
+import HowToBuildAClimate from "../assets/ArticleThumbnails/HowToBuildAClimate-ReadyDataStack.png";
+import InsideTheAetherfieldModel from "../assets/ArticleThumbnails/InsideTheAetherfieldModel.png";
+import SustainabilityIsntaSideProject from "../assets/ArticleThumbnails/SustainabilityIsntaSideProject.png";
+import CarbonAccounting from "../assets/ArticleThumbnails/CarbonAccounting.png";
+import SeeingClearly from "../assets/ArticleThumbnails/SeeingClearly.png";
 
 // icons
 // import Up from "../assets/Up.svg?react";
@@ -42,17 +49,74 @@ export default function Journal() {
       </section>
 
       {/* intro */}
-      <section className="intro">
+      <section className="intro flex justify-center">
         <img
           src={JournalIntro}
           alt="Aetherfield Journal stamp graphic with the words tech, earth, and data around a diamond frame"
-          className="w-full mt-15"
+          className="max-w-7xl w-full mt-15"
         />
       </section>
 
       {/* articles */}
-      <section className="articles px-5 pt-20 pb-10 gap-10 flex flex-col items-center">
+      <section className="articles px-5 pt-20 pb-10 max-md:pt-10 max-md:pb-6 max-sm:pt-6 max-sm:pb-4  gap-10 flex flex-col items-center">
         <h4>Latest articles</h4>
+
+        <div className="article-entries grid grid-cols-2 max-md:grid-cols-1 gap-x-4 gap-y-20 max-md:gap-y-10">
+          <ArticleLarge
+            link=""
+            img={HowToBuildAClimate}
+            imgAlt="article thumbail"
+            title="How to Build a Climate-Ready Data Stack"
+            details="Insights"
+            duration="4 min"
+            description="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
+          />
+          <ArticleLarge
+            link=""
+            img={SustainabilityIsntaSideProject}
+            imgAlt="article thumbail"
+            title="Sustainability Isn’t a Side Project: Making Impact Operational"
+            details="Strategy"
+            duration="7 min"
+            description="Why climate goals belong in your core roadmap—not just in the annual ESG report."
+          />
+          <ArticleLarge
+            link=""
+            img={InsideTheAetherfieldModel}
+            imgAlt="article thumbail"
+            title="Inside the Aetherfield Model: How We Turn Data Into Action"
+            details="Insights"
+            duration="5 min"
+            description="A behind-the-scenes look at our platform logic, system architecture, and sustainability reasoning."
+          />
+          <ArticleLarge
+            link=""
+            img={FromSpreadsheetstoSystems}
+            imgAlt="article thumbail"
+            title="From Spreadsheets to Systems: The Evolution of Climate Reporting"
+            details="Tooling"
+            duration="6 min"
+            description="Why legacy tools aren’t enough—and what the next generation of reporting looks like."
+          />
+          <ArticleLarge
+            link=""
+            img={CarbonAccounting}
+            imgAlt="article thumbail"
+            title="Carbon Accounting: Myths, Models, and Must-Haves"
+            details="Tooling"
+            duration="6 min"
+            description="Debunking common assumptions and offering a framework for getting it right."
+          />
+          <ArticleLarge
+            link=""
+            img={SeeingClearly}
+            imgAlt="article thumbail"
+            title="Seeing Clearly: Designing Feedback Loops for Sustainable Growth"
+            details="Strategy"
+            duration="4 min"
+            description="Building responsive systems that keep sustainability strategy adaptive and actionable."
+          />
+        </div>
       </section>
 
       {/* call to action */}

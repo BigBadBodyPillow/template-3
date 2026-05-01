@@ -11,12 +11,12 @@ export default function ArticleLarge({
 }) {
   return (
     <>
-      <article className="flex flex-col max-w-153 gap-5 group">
-        <a href={link} draggable="false">
+      <article className=" max-w-153 max-md:max-w-full group">
+        <a href={link} draggable="false" className="flex flex-col  gap-5 ">
           <img
             src={img}
             alt={imgAlt || "no image loaded"}
-            className="h-89 w-full border-none! flex justify-center items-center"
+            className="h-89 w-full border-none! flex justify-center items-center object-cover"
             draggable="false"
           />
 
