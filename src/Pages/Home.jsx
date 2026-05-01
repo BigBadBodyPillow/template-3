@@ -6,6 +6,7 @@ import NavMobile from "../components/NavMobile";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import ArticleSmall from "../components/ArticleSmall";
+import Footer from "../components/Footer";
 
 // assets
 import Hero from "../assets/Hero image.png";
@@ -38,7 +39,6 @@ export default function Home() {
           <NavMobile />
         </div>
       </section>
-
       {/* hero */}
       <section className="px-5 h-dvh max-h-213.75 z-1">
         <div className=" absolute inset-0 w-full h-213.75! -z-1 bg-linear-to-b from-(--gradient-colour-1) to-(--gradient-colour-2)" />
@@ -72,9 +72,7 @@ export default function Home() {
           />
         </div>
       </section>
-
       <div className="divider h-63! max-xs:hidden" />
-
       {/* features */}
       <section className="px-5 py-30 gap-10 flex flex-col items-center ">
         <h4 className="text-center! max-w-153">
@@ -136,11 +134,10 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-            <ButtonPrimary text="Request a demo" />
+            <ButtonPrimary text="Request a demo" link="" full="true" />
           </div>
         </div>
       </section>
-
       {/* values */}
       <section
         className={`bg-[url("./src/assets/ValuesBackground.png")]  flex flex-col items-center gap-10 px-5 py-30`}
@@ -174,7 +171,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* case study */}
       <section className={` flex flex-col items-center gap-10 px-5 py-30`}>
         <div className="bg-(--bg-2) flex max-sm:flex-col gap-10 p-5 max-w-245 items-center rounded-2xl">
@@ -192,11 +188,10 @@ export default function Home() {
                 Faster decisions, fewer spreadsheets, and 34% more coverage.
               </p>
             </div>
-            <ButtonSecondary text="Read case study" />
+            <ButtonSecondary text="Read case study" link="" full="true" />
           </div>
         </div>
       </section>
-
       {/* Blog */}
       <section className="flex flex-col px-5 max-md:pt-10 max-sm:pt-0 items-center gap-10 relative">
         <h4 className="my-0!">From the journal</h4>
@@ -229,7 +224,7 @@ export default function Home() {
             />
           </div>
 
-          <ButtonSecondary text="View all articles" link="" />
+          <ButtonSecondary text="View all articles" link="" full="true" />
         </div>
         <img
           src={Sticker2}
@@ -240,15 +235,14 @@ export default function Home() {
       </section>
 
       {/* Testimonial */}
-      <section className={` px-5 py-30 flex justify-center`}>
+      <section className={`testimonial px-5 py-30 flex justify-center`}>
         <div className="max-w-310 flex max-sm:flex-col items-center gap-4  max-sm:gap-6 justify-center ">
-          {/* <div className="flex gap-4 items-center  w-full"> */}
           <img
             src={Testimonial}
             alt="Stylized blue duotone portrait of a person facing the camera with arms crossed select-none!"
             className="h-full max-w-153 w-full"
           />
-          <div className="flex-1 h-96 flex justify-center">
+          <div className="w-full h-96 flex justify-center">
             <div className="flex flex-col w-100.5 max-sm:w-full justify-between">
               <Quotation className="w-6! h-5!" />
               <h4>
@@ -262,9 +256,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </section>
+
+      {/* call to action */}
+      <section className="call-to-action  px-5 py-30 flex flex-col items-center gap-8 bg-(--bg-2)">
+        <h4 className="text-center!">
+          Ready to operationalize your sustainability goals?
+        </h4>
+        <ButtonPrimary text="Request a demo" link="" />
+      </section>
+
+      <Footer />
     </>
   );
 }

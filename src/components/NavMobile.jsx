@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "~/assets/Logo.svg?react";
 import Plus from "~/assets/Plus.svg?react";
@@ -43,9 +44,12 @@ export default function NavMobile() {
               </a>
             </li>
             <li className="border-(--divider) border-b py-6">
-              <a href="#" className=" block ">
+              {/* <a href="#" className=" block ">
                 <h4 className="p-0! m-0!">Journal</h4>
-              </a>
+              </a> */}
+              <Link to="/journal" className=" block ">
+                <h4 className="p-0! m-0!">Journal</h4>
+              </Link>
             </li>
             <li className="border-(--divider) border-b py-6">
               <a href="#" className=" block">
