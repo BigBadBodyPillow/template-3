@@ -60,14 +60,14 @@ export default function NavMobile() {
               </a>
             </li>
             <li className="border-(--divider) border-b py-6">
-              <a href="#" className=" block">
+              <Link to="/about" href="#" className=" block">
                 <h4 className="p-0! m-0!">About</h4>
-              </a>
+              </Link>
             </li>
             <li className="border-(--divider) border-b py-6">
-              <a href="#" className=" block ">
+              <Link to="/careers" href="#" className=" block ">
                 <h4 className="p-0! m-0!">Careers</h4>
-              </a>
+              </Link>
             </li>
             <li className="border-(--divider) border-b py-6">
               <button className=" block p-4  bg-(--text) text-(--bg) h-13 w-full text-center!">

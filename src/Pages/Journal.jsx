@@ -29,6 +29,7 @@ import InsideTheAetherfieldModel from "../assets/ArticleThumbnails/InsideTheAeth
 import SustainabilityIsntaSideProject from "../assets/ArticleThumbnails/SustainabilityIsntaSideProject.png";
 import CarbonAccounting from "../assets/ArticleThumbnails/CarbonAccounting.png";
 import SeeingClearly from "../assets/ArticleThumbnails/SeeingClearly.png";
+import CalltoAction from "../components/CalltoAction";
 
 // icons
 // import Up from "../assets/Up.svg?react";
@@ -54,6 +55,7 @@ export default function Journal() {
           src={JournalIntro}
           alt="Aetherfield Journal stamp graphic with the words tech, earth, and data around a diamond frame"
           className="max-w-7xl w-full mt-15"
+          loading="lazy"
         />
       </section>
 
@@ -120,10 +122,16 @@ export default function Journal() {
       </section>
 
       {/* call to action */}
-      <section className="call-to-action  px-5 py-30 flex flex-col items-center gap-8 bg-(--bg-2)">
+      {/* <section className="call-to-action  px-5 py-30 flex flex-col items-center gap-8 bg-(--bg-2)">
         <h4 className="text-center!">Subscribe to Aetherfield Journal</h4>
         <ButtonPrimary text="Sign up to newsletter" link="" />
-      </section>
+      </section> */}
+
+      <CalltoAction
+        text="Subscribe to Aetherfield Journal"
+        buttonText="Sign up to newsletter"
+        link=""
+      />
 
       <Footer />
     </>

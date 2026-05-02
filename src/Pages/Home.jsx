@@ -27,6 +27,7 @@ import PieChart from "../assets/PieChart.svg?react";
 import Up from "../assets/Up.svg?react";
 import System from "../assets/System.svg?react";
 import Quotation from "../assets/Quotation.svg?react";
+import CalltoAction from "../components/CalltoAction";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           <NavMobile />
         </div>
       </section>
+
       {/* hero */}
       <section className="px-5 h-dvh max-h-213.75 z-1">
         <div className=" absolute inset-0 w-full h-213.75! -z-1 bg-linear-to-b from-(--gradient-colour-1) to-(--gradient-colour-2)" />
@@ -73,7 +75,9 @@ export default function Home() {
           />
         </div>
       </section>
+
       <div className="divider h-63! max-xs:hidden" />
+
       {/* features */}
       <section className="px-5 py-30 gap-10 flex flex-col items-center ">
         <h4 className="text-center! max-w-153">
@@ -85,16 +89,19 @@ export default function Home() {
               src={Feature}
               alt="UI card displaying energy consumption data on a light fabric background"
               className=" max-w-173.25 w-full object-cover max-md:hidden  select-none"
+              loading="lazy"
             />
             <img
               src={FeatureMedium}
               alt="UI card displaying energy consumption data on a light fabric background"
               className=" max-w-190 w-full object-contain hidden max-md:block max-sm:hidden select-none"
+              loading="lazy"
             />
             <img
               src={FeatureSmall}
               alt="UI card displaying energy consumption data on a light fabric background"
               className=" max-w-190 w-full object-contain hidden max-sm:block  select-none"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col justify-between">
@@ -139,9 +146,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* values */}
       <section
-        className={`bg-[url("../src/assets/ValuesBackground.png")]  flex flex-col items-center gap-10 px-5 py-30`}
+        className={`bg-[url("../src/assets/ValuesBackground.png")]  flex flex-col items-center gap-10 px-5 py-30 `}
       >
         <div>
           <h2 className="font-(family-name:--heading)! my-0! text-center!">
@@ -149,7 +157,7 @@ export default function Home() {
           </h2>
           <h2 className="my-0! text-center!">Designed for action</h2>
         </div>
-        <div className="flex gap-4 max-md:flex-col">
+        <div className="flex gap-4 max-md:flex-col max-w-7xl">
           <div className="flex flex-col gap-6 p-10 rounded-2xl bg-(--bg) flex-1">
             <PieChart />
             <div className="flex flex-col gap-2">
@@ -182,6 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* case study */}
       <section className={` flex flex-col items-center gap-10 px-5 py-30`}>
         <div className="bg-(--bg-2) flex max-sm:flex-col gap-10 p-5 max-w-245 items-center rounded-2xl">
@@ -189,6 +198,7 @@ export default function Home() {
             src={CaseStudy}
             alt="Group of colleagues greeting each other in a stylized blue duotone treatment"
             className="object-cover max-w-124.5 max-sm:max-w-full w-full  h-80  select-none rounded-lg"
+            loading="lazy"
           />
           <div className="flex flex-col gap-8 h-fit">
             <div className="flex flex-col gap-4  w-100.75 max-md:w-85 max-sm:w-full">
@@ -203,6 +213,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Blog */}
       <section className="flex flex-col px-5 max-md:pt-10 max-sm:pt-0 items-center gap-10 relative">
         <h4 className="my-0!">From the journal</h4>
@@ -252,6 +263,7 @@ export default function Home() {
             src={Testimonial}
             alt="Stylized blue duotone portrait of a person facing the camera with arms crossed select-none!"
             className="h-full max-w-153 w-full"
+            loading="lazy"
           />
           <div className="w-full h-96 flex justify-center">
             <div className="flex flex-col w-100.5 max-sm:w-full justify-between">
@@ -271,12 +283,17 @@ export default function Home() {
       </section>
 
       {/* call to action */}
-      <section className="call-to-action  px-5 py-30 flex flex-col items-center gap-8 bg-(--bg-2)">
+      {/* <section className="call-to-action  px-5 py-30 flex flex-col items-center gap-8 bg-(--bg-2)">
         <h4 className="text-center!">
           Ready to operationalize your sustainability goals?
         </h4>
         <ButtonPrimary text="Request a demo" link="" />
-      </section>
+      </section> */}
+      <CalltoAction
+        text="Ready to operationalize your sustainability goals?"
+        buttonText="Request a demo"
+        link=""
+      />
 
       <Footer />
     </>

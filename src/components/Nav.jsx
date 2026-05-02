@@ -19,8 +19,8 @@ export default function Nav({ blur }) {
           <a href="#">Product</a>
           {/* <a href="#">Journal</a> */}
           <Link to="/journal">Journal</Link>
-          <a href="#">About</a>
-          <a href="#">Careers</a>
+          <Link to="/about">About</Link>
+          <Link to="/careers">Careers</Link>
           <TextLink link="#" />
         </div>
       </nav>

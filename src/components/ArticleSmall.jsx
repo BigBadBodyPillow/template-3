@@ -28,6 +28,7 @@ export default function ArticleSmall({
             className={`w-41.25 h-25 border-none! flex justify-center items-center max-sm:w-full max-sm:h-[227.27px] select-none!`}
             // className={`w-41.25 h-25 border-none! flex justify-center items-center ${mobile ? " w-full h-[227.27px]" : ""}`}
             draggable="false"
+            loading="lazy"
           />
 
           <div className="flex flex-col gap-6">

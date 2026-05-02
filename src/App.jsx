@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Styles from "~/Pages/Styles";
 import Home from "~/Pages/Home";
 import Journal from "~/Pages/Journal";
+import About from "~/Pages/About";
+import Careers from "~/Pages/Careers";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/styles" element={<Styles />} />
           <Route path="/journal" element={<Journal />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
       </BrowserRouter>
