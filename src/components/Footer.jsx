@@ -18,7 +18,7 @@ export default function Footer() {
           <p className="p2">&copy; 2026 · All rights reserved</p>
         </div>
         <div
-          className={`bg-[url(src/assets/FooterImage.png)] bg-cover bg-(--bg-3) opacity-90 bg-blend-multiply my-5 max-md:my-4  w-full h-70 max-md:h-30`}
+          className={`bg-[url(../src/assets/FooterImage.png)] bg-cover bg-(--bg-3) opacity-90 bg-blend-multiply my-5 max-md:my-4  w-full h-70 max-md:h-30`}
           //   className={`bg-[url(src/assets/FooterImage.png)] bg-cover bg-(--bg-3) opacity-90 bg-blend-multiply my-5 max-md:my-4  w-full h-70 max-md:h-30`}
         ></div>
         <div className="w-full overflow-hidden">
