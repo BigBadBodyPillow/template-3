@@ -23,6 +23,7 @@ import Testimonial from "../assets/Testimonial.png";
 import Sticker2 from "../assets/Sticker2.png";
 
 // icons
+import PieChart from "../assets/PieChart.svg?react";
 import Up from "../assets/Up.svg?react";
 import System from "../assets/System.svg?react";
 import Quotation from "../assets/Quotation.svg?react";
@@ -140,7 +141,7 @@ export default function Home() {
       </section>
       {/* values */}
       <section
-        className={`bg-[url("./src/assets/ValuesBackground.png")]  flex flex-col items-center gap-10 px-5 py-30`}
+        className={`bg-[url("../src/assets/ValuesBackground.png")]  flex flex-col items-center gap-10 px-5 py-30`}
       >
         <div>
           <h2 className="font-(family-name:--heading)! my-0! text-center!">
@@ -149,7 +150,17 @@ export default function Home() {
           <h2 className="my-0! text-center!">Designed for action</h2>
         </div>
         <div className="flex gap-4 max-md:flex-col">
-          <div className="flex flex-col gap-6 p-10 rounded-2xl bg-(--bg)">
+          <div className="flex flex-col gap-6 p-10 rounded-2xl bg-(--bg) flex-1">
+            <PieChart />
+            <div className="flex flex-col gap-2">
+              <p>Clarity drives action</p>
+              <p className="p2">
+                We believe better decisions start with better data—measured,
+                visible, and trusted.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-6 p-10 rounded-2xl bg-(--bg) flex-1">
             <System />
             <div className="flex flex-col gap-2">
               <p>Sustainability is a systems problem</p>
@@ -159,7 +170,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" flex flex-col gap-6 p-10 rounded-2xl bg-(--bg)">
+          <div className=" flex flex-col gap-6 p-10 rounded-2xl bg-(--bg) flex-1">
             <Up />
             <div className="flex flex-col gap-2">
               <p>Progress over perfection</p>
