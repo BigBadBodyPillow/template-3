@@ -37,17 +37,17 @@ export default function About() {
             <img
               src={AboutIntro}
               alt="Abstracted user interface forecasting a 16% off target for 2027 emissions goal alongside an image of a mossy tree on top of a light blue gradient background"
-              className="max-md:hidden block w-full max-h-200 h-auto"
+              className="max-md:hidden block w-full max-h-200 h-auto select-none"
             />
             <img
               src={AboutIntroMedium}
               alt="Abstracted user interface forecasting a 16% off target for 2027 emissions goal alongside an image of a mossy tree on top of a light blue gradient background"
-              className="hidden max-md:block max-sm:hidden w-full h-auto"
+              className="hidden max-md:block max-sm:hidden w-full h-auto select-none"
             />
             <img
               src={AboutIntroSmall}
               alt="Abstracted user interface forecasting a 16% off target for 2027 emissions goal alongside an image of a mossy tree on top of a light blue gradient background"
-              className="hidden max-sm:block w-full h-auto"
+              className="hidden max-sm:block w-full h-auto select-none"
             />
           </div>
           <div className="flex-1 max-h-200 max-md:pl-16 max-md:pr-26.25 max-sm:px-5">
@@ -109,7 +109,7 @@ export default function About() {
           <img
             src={EunjiPark}
             alt="Stylized blue duotone portrait of a woman with long hair facing slightly backward"
-            className="flex-1 w-full object-cover"
+            className="flex-1 w-full object-cover select-none"
           />
           <div className="flex-1 flex items-center justify-center max-md:px-10 max-sm:px-0">
             <div className="max-w-100.5  max-sm:max-w-full  flex flex-col gap-14 max-sm:gap-8">
@@ -130,10 +130,10 @@ export default function About() {
         </section>
       </div>
       {/* meet the team */}
-      <section className="px-5 flex flex-col  items-center gap-16 py-30">
-        <div className="max-w-7xl w-full">
-          <h3 className="my-0!">Meet the team </h3>
-          <div className=" flex flex-col">
+      <section className="px-5  py-30 flex justify-center">
+        <div className="max-w-7xl w-full flex flex-col  items-center  gap-16">
+          <h3 className="my-0! w-full">Meet the team </h3>
+          <div className=" flex flex-col w-full ">
             <div className="flex mb-2.5  max-md:hidden">
               <p className="flex-1 caption">Name</p>
               <p className="flex-1 caption">Title</p>
