@@ -11,6 +11,7 @@ import AboutIntro from "../assets/AboutIntro.png";
 import AboutIntroMedium from "../assets/AboutIntroMedium.png";
 import AboutIntroSmall from "../assets/AboutIntroSmall.png";
 import EunjiPark from "../assets/EunjiPark.png";
+import Sticker1 from "../assets/Sticker1.png";
 
 //icons
 import PieChart from "../assets/PieChart.svg?react";
@@ -103,9 +104,10 @@ export default function About() {
           </div>
         </div>
       </section>
+
       {/* story */}
-      <div className="flex  justify-center">
-        <section className="flex  max-sm:flex-col px-5 gap-4 pb-30 max-md:pb-20 max-sm:pb-10 max-w-7xl w-full">
+      <section className="flex  justify-center relative">
+        <div className="flex  max-sm:flex-col px-5 gap-4 pb-30 max-md:pb-20 max-sm:pb-10 max-w-7xl w-full">
           <img
             src={EunjiPark}
             alt="Stylized blue duotone portrait of a woman with long hair facing slightly backward"
@@ -127,8 +129,15 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>
-      </div>
+          <img
+            src={Sticker1}
+            className="sticker about z-10 max-sm:hidden"
+            // -rotate-10
+            draggable="false"
+          />
+        </div>
+      </section>
+
       {/* meet the team */}
       <section className="px-5  py-30 flex justify-center">
         <div className="max-w-7xl w-full flex flex-col  items-center  gap-16">

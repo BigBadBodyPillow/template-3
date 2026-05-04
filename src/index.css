@@ -312,12 +312,22 @@ Get Started
     top: 0;
     transform: translateX(-95%) rotate(calc(10deg * -1));
   }
+  &.about {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    transform: translate(-13%, -50%) rotate(calc(10deg * -1));
+  }
 
   /* tailwind md */
   @media (width < 48rem /* 768px */) {
     &.journal {
       top: -55px;
       transform: translateX(-70%) rotate(calc(10deg * -1));
+    }
+    &.about {
+      width: 250px;
+      transform: translate(-33%, -65%) rotate(calc(10deg * -1));
     }
   }
 }

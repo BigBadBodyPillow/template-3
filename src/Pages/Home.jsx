@@ -16,9 +16,9 @@ import FeatureMedium from "../assets/Feature Image-1.png";
 import FeatureSmall from "../assets/Feature Image-2.png";
 import ValuesBackground from "../assets/ValuesBackground.png";
 import CaseStudy from "../assets/CaseStudy.png";
-import Climate from "../assets/ArticleThumbnails/HowToBuildAClimate-ReadyDataStack.png";
-import Sustainability from "../assets/ArticleThumbnails/SustainabilityIsntaSideProject.png";
-import Aetherfield from "../assets/ArticleThumbnails/InsideTheAetherfieldModel.png";
+import Climate from "/ArticleThumbnails/HowToBuildAClimate-ReadyDataStack.png";
+import Sustainability from "/ArticleThumbnails/SustainabilityIsntaSideProject.png";
+import Aetherfield from "/ArticleThumbnails/InsideTheAetherfieldModel.png";
 import Testimonial from "../assets/Testimonial.png";
 import Sticker2 from "../assets/Sticker2.png";
 
@@ -221,7 +221,7 @@ export default function Home() {
         <div className="flex flex-col max-w-155 items-center gap-6">
           <div>
             <ArticleSmall
-              link=""
+              link="/article/how-to-build-a-climate-ready-data-stack"
               img={Climate}
               imgAlt="Article Thumbnail Image"
               title="How to Build a Climate-Ready Data Stack"
@@ -229,7 +229,7 @@ export default function Home() {
               duration=" 4 min"
             />
             <ArticleSmall
-              link=""
+              link="/article/sustainability-isnt-a-side-project"
               img={Sustainability}
               imgAlt="Article Thumbnail Image"
               title="Sustainability Isn’t a Side Project: Making Impact Operational"
@@ -237,7 +237,7 @@ export default function Home() {
               duration="7 min"
             />
             <ArticleSmall
-              link=""
+              link="/article/inside-the-aetherfield-model"
               img={Aetherfield}
               imgAlt="Article Thumbnail Image"
               title="Inside the Aetherfield Model: How We Turn Data Into Action"
@@ -246,7 +246,14 @@ export default function Home() {
             />
           </div>
 
-          <ButtonSecondary text="View all articles" link="" full="true" />
+          <Link
+            to={"/journal"}
+            className="p-4  bg-(--text) text-(--bg) h-9.5 hover:shadow-hover group flex items-center justify-center w-fit max-md:w-full"
+          >
+            <span className="group-hover:opacity-80 text-nowrap">
+              View all articles
+            </span>
+          </Link>
         </div>
         <img
           src={Sticker2}

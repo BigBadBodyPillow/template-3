@@ -18,7 +18,7 @@ export default function ArticleLarge({
           <img
             src={img}
             alt={imgAlt || "no image loaded"}
-            className={`h-89 w-full border-none! flex justify-center items-center object-cover select-none ${rectangle ? " max-h-58.5" : ""}`}
+            className={`h-89 w-full border-none! flex justify-center items-center object-cover select-none ${rectangle ? "lg:max-h-58.5" : ""}`}
             draggable="false"
             loading="lazy"
           />

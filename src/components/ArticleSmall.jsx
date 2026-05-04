@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ArticleSmall({
   link,
@@ -16,8 +17,8 @@ export default function ArticleSmall({
         // className={`group py-6 w-full border-(--divider) border-y! max-sm:max-w-93.75 `}
         // className={`group py-6 w-full border-(--divider) border-y! ${mobile ? " max-w-93.75 " : ""} `}
       >
-        <a
-          href={link}
+        <Link
+          to={link}
           draggable="false"
           className={`flex gap-4 max-sm:flex-col`}
           // className={`flex gap-4 ${mobile ? " flex-col" : ""}`}
@@ -41,7 +42,7 @@ export default function ArticleSmall({
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </article>
     </>
   );

@@ -8,6 +8,7 @@ import ArticleLarge from "../components/ArticleLarge";
 import Footer from "../components/Footer";
 
 import articles from "../data/articles.json";
+import MetaData from "../components/MetaData";
 
 export default function Article() {
   const { id } = useParams();
@@ -63,25 +64,16 @@ export default function Article() {
         />
 
         <section className="flex justify-center">
-          <div className="flex px-25 pt-20 justify-between max-w-310 w-full">
-            <aside className="flex flex-col gap-10 max-w-50 w-full h-fit">
-              <div className="flex flex-col gap-1">
-                <p className="p2 text-(--text-2)! p-0!">Published</p>
-                <p>{article.publishedDate}</p>
-              </div>
-              <div className="flex flex-col gap-1 ">
-                <p className="p text-(--text-2)! p-0!">Author</p>
-                <p>{article.author}</p>
-              </div>
-            </aside>
-            <div className="articleP max-w-185 border-(--divider) border-b pb-12 text-left!">
+          <div className="flex max-md:flex-col max-md:gap-10 max-sm:gap-8 px-25 max-md:px-20 max-sm:px-5 pt-20 max-sm:pt-10  justify-between max-w-310 w-full">
+            <MetaData date={article.publishedDate} author={article.author} />
+            <div className="articleP max-w-185 border-(--divider) border-b pb-12 max-sm:pb-10 text-left!">
               {article.intro}
             </div>
           </div>
         </section>
 
         <div className="flex justify-center">
-          <section className="flex px-25 pt-12 pb-20 justify-end  max-w-310 w-full">
+          <section className="flex px-25 max-md:px-20 max-sm:px-5 pt-12 max-sm:py-10 pb-20 justify-end  max-w-310 w-full">
             <div className="max-w-185 w-full">
               {article.content.map((paragraph, index) => (
                 <div
@@ -96,14 +88,17 @@ export default function Article() {
       </main>
 
       <section className="flex justify-center bg-(--bg-2) ">
-        <div className="flex flex-col px-5 py-30 max-w-310 ">
-          <div className="flex justify-between">
-            <h2 className="my-0!">Recent articles</h2>
-            <Link to="/journal" className="underline">
+        <div className="flex flex-col px-5 py-30 max-md:py-20 max-sm:py-10 gap-5 max-sm:gap-6 max-w-310 ">
+          <div className="flex justify-between max-sm:flex-col">
+            <h3 className="my-0! max-sm:text-center!">Recent articles</h3>
+            <Link
+              to="/journal"
+              className="p2! text-xl! underline content-end max-sm:text-center!"
+            >
               View all articles
             </Link>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 max-md:gap-5  max-sm:gap-8 max-md:flex-col">
             {articles.slice(0, 3).map((item) => (
               <ArticleLarge
                 key={item.id}

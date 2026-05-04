@@ -7,18 +7,15 @@ export default function MetaData({
 }) {
   return (
     <>
-      <div className={`p-5 flex gap-10 flex-col max-xs:flex-row `}>
-        {/* <div
-        className={`p-5 flex gap-10 ${mobile ? " flex-row " : " flex-col "}`}
-      > */}
-        <div className="flex flex-col gap-1">
+      <div className={`flex gap-10 flex-col max-md:flex-row `}>
+        <div className="flex flex-col gap-1 flex-1">
           <p className="font-(family-name:--heading)! text-(--text-2)">
             Published
           </p>
           <p>{date}</p>
         </div>
 
-        <div>
+        <div className="flex flex-col gap-1 flex-1">
           <p className="font-(family-name:--heading)! text-(--text-2)">
             Author
           </p>
