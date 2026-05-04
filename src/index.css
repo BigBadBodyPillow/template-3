@@ -244,24 +244,16 @@ p {
 */
 ul {
   list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
 }
 
 ol {
   list-style-type: decimal;
 }
 li::marker {
-  color: var(--link);
+  color: inherit;
 }
-/* a {
-  color: var(--link);
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}
-
-a:hover {
-  text-decoration-thickness: 0.125rem;
-} */
 
 hr {
   border: none;

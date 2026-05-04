@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
 
 // pages
 import Styles from "~/Pages/Styles";
@@ -7,7 +8,7 @@ import Journal from "~/Pages/Journal";
 import About from "~/Pages/About";
 import Careers from "~/Pages/Careers";
 import Article from "./Pages/Article";
-import { useLayoutEffect } from "react";
+import JobListing from "./Pages/JobListing";
 
 // fix react router not resetting scroll postion
 // https://medium.com/@caden0002/fixing-scroll-position-issues-in-react-router-scroll-to-top-on-navigation-86bcfbdfc9db
@@ -36,6 +37,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/article/:id" element={<Article />} />
+            <Route path="/job-listing/:id" element={<JobListing />} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
         </Wrapper>

@@ -4,6 +4,10 @@ import NavMobile from "../components/NavMobile";
 import Footer from "../components/Footer";
 import ButtonSecondary from "../components/ButtonSecondary";
 
+// data
+import jobListings from "../data/jobListings.json";
+import { Link } from "react-router-dom";
+
 export default function Careers() {
   return (
     <>
@@ -24,62 +28,32 @@ export default function Careers() {
         </header>
 
         <ul className="list-none! p-0 m-0 max-w-205 flex flex-col gap-4">
-          <li className="flex max-sm:flex-col min-h-48.5 gap-6 p-10 bg-(--bg) rounded-2xl">
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <p className="my-0!">UX Designer</p>
-                <div className="flex text-(--text-2) gap-2 caption">
-                  <p className="caption">Contract</p>
-                  <p className="caption">·</p>
-                  <p className="caption">San Francisco, CA</p>
+          {jobListings.map((job) => (
+            <li
+              key={job.id}
+              className="flex max-sm:flex-col min-h-48.5 gap-6 p-10 bg-(--bg) rounded-2xl"
+            >
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-2">
+                  <p className="my-0!">{job.title}</p>
+                  <div className="flex text-(--text-2) gap-2 caption">
+                    <p className="caption">{job.role}</p>
+                    <p className="caption">·</p>
+                    <p className="caption">{job.location}</p>
+                  </div>
                 </div>
+                <p className="p2">{job.description}</p>
               </div>
-              <p className="p2">
-                Shape the tools that drive climate intelligence. You’ll lead
-                cross-functional teams to build thoughtful, scalable solutions
-                for sustainability-forward organizations.
-              </p>
-            </div>
-            <ButtonSecondary text="View Role" link="" full="" />
-          </li>
-
-          <li className="flex max-sm:flex-col min-h-48.5  gap-6 p-10 bg-(--bg) rounded-2xl">
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <p className="my-0!">Data Scientist</p>
-                <div className="flex text-(--text-2) gap-2 caption">
-                  <p className="caption">Full-time</p>
-                  <p className="caption">·</p>
-                  <p className="caption">Denver, CO</p>
-                </div>
-              </div>
-              <p className="p2">
-                Help build the intelligence layer for climate action. You’ll
-                turn complex sustainability data into clear, actionable insights
-                for enterprise teams.
-              </p>
-            </div>
-            <ButtonSecondary text="View Role" link="" full="" />
-          </li>
-
-          <li className="flex max-sm:flex-col min-h-48.5  gap-6 p-10 bg-(--bg) rounded-2xl">
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <p className="my-0!">Product Manager</p>
-                <div className="flex text-(--text-2) gap-2 caption">
-                  <p className="caption">Part-time</p>
-                  <p className="caption">·</p>
-                  <p className="caption">Seattle, WA</p>
-                </div>
-              </div>
-              <p className="p2">
-                Shape the tools that drive climate intelligence. You’ll lead
-                cross-functional teams to build thoughtful, scalable solutions
-                for sustainability-forward organizations.
-              </p>
-            </div>
-            <ButtonSecondary text="View Role" link="" full="" />
-          </li>
+              <Link
+                className="p-4  bg-(--text) text-(--bg) h-9.5 hover:shadow-hover group flex items-center justify-center w-fit"
+                to={`/job-listing/${job.id}`}
+              >
+                <span className="group-hover:opacity-80 text-nowrap">
+                  View Role
+                </span>
+              </Link>
+            </li>
+          ))}
 
           <li className="flex max-sm:flex-col min-h-48.5  gap-6 p-10 dash rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] ">
             <div className="flex flex-col gap-6 w-full">
