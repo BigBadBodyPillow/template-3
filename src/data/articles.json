@@ -1,0 +1,76 @@
+[
+  {
+    "id": "how-to-build-a-climate-ready-data-stack",
+    "title": "How to Build a Climate-Ready Data Stack",
+    "details": "Insights",
+    "duration": "4 min",
+    "description": "A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows.",
+    "publishedDate": "April 10, 2026",
+    "author": "Aetherfield Team",
+    "intro": "Climate action is only as strong as the data that informs it. But most data stacks weren’t designed with emissions, supply chains, or climate modeling in mind. Teams are often stuck retrofitting existing systems or relying on brittle workarounds to generate insights. It’s time to rethink our infrastructure—starting with the foundation.",
+    "thumbnail": "ArticleThumbnails/HowToBuildAClimate-ReadyDataStack.png",
+    "content": [
+      "<h5>Built for Another Era</h5> <br/> <p class='articleP'>Most data infrastructures were built to optimize for sales, user growth, or cost—not carbon. This creates friction when sustainability teams try to source emissions data from systems that weren’t designed to capture it. Without foundational visibility, even basic reporting becomes a manual, error-prone task. The result? Delays, duplications, and disconnects.</p> <br/> <h5>Bridging the Gaps</h5> <br/> <p class='articleP'>Emissions data lives everywhere—and nowhere. From procurement software to building sensors, critical signals are often siloed across vendors, formats, or departments. The first step to a climate-ready stack is connection: mapping where relevant data lives, how it’s structured, and where the friction points are in accessing it consistently.</p> <br/> <h5>Stack With Strategy</h5> <br/> <p class='articleP'>A modern climate stack isn’t just a bundle of tools—it’s an integrated system that mirrors how your business actually operates. This means prioritizing interoperability, aligning metrics across platforms, and investing in foundational data governance. Tools alone won’t solve emissions blind spots—strategy will.</p> <br/> <h5>Bake in Flexibility</h5> <br/> <p class='articleP'>Regulatory frameworks, emissions factors, and supplier data are constantly evolving. Your data stack should too. That means designing for modularity, version control, and extensibility. Future-proofing your system is less about predicting what’s next and more about building with change in mind.</p> <br/>  <h5>From Stack to Story</h5> <br/> <p class='articleP'>At the end of the day, data infrastructure is only valuable if it drives action. A climate-ready stack enables teams to monitor progress, identify trade-offs, and make informed decisions at speed. With the right foundations in place, sustainability becomes more than a report—it becomes a capability.</p> "
+    ]
+  },
+  {
+    "id": "sustainability-isnt-a-side-project",
+    "title": "Sustainability Isn’t a Side Project: Making Impact Operational",
+    "details": "Strategy",
+    "duration": "7 min",
+    "description": "Why climate goals belong in your core roadmap—not just in the annual ESG report.",
+    "publishedDate": "March 24, 2026",
+    "author": "Aetherfield Team",
+    "intro": "Too often, sustainability lives on the edge of the org chart—under-resourced, reactive, and disconnected from the core business. But real impact isn’t an initiative, it’s an operating principle. From product decisions to procurement flows, we’ll explore what it takes to embed sustainability into the systems that shape everyday work.",
+    "thumbnail": "ArticleThumbnails/SustainabilityIsntaSideProject.png",
+    "content": []
+  },
+  {
+    "id": "inside-the-aetherfield-model",
+    "title": "Inside the Aetherfield Model: How We Turn Data Into Action",
+    "details": "Insights",
+    "duration": "5 min",
+    "description": "A behind-the-scenes look at our platform logic, system architecture, and sustainability reasoning.",
+    "publishedDate": "February 18, 2026",
+    "author": "Aetherfield Team",
+    "intro": "Data is everywhere, but turning it into meaningful climate action takes more than dashboards. The Aetherfield Model is our response to the noise—a systems-based approach that connects data, decision-making, and delivery. In this piece, we break down how the model works, and why clarity beats complexity every time.",
+    "thumbnail": "ArticleThumbnails/InsideTheAetherfieldModel.png",
+    "content": []
+  },
+  {
+    "id": "from-spreadsheets-to-systems",
+    "title": "From Spreadsheets to Systems: The Evolution of Climate Reporting",
+    "details": "Tooling",
+    "duration": "6 min",
+    "description": "Why legacy tools aren’t enough—and what the next generation of reporting looks like.",
+    "publishedDate": "January 30, 2026",
+    "author": "Aetherfield Team",
+    "intro": "The first wave of climate reporting was built in spreadsheets—manual, patchy, and often siloed. But as expectations rise, so does the need for rigor, scale, and repeatability. We’re tracing the journey from reactive carbon tracking to integrated, audit-ready systems that support real-time insight and strategic decisions.",
+    "thumbnail": "ArticleThumbnails/FromSpreadsheetstoSystems.png",
+    "content": []
+  },
+  {
+    "id": "carbon-accounting-myths-models-must-haves",
+    "title": "Carbon Accounting: Myths, Models, and Must-Haves",
+    "details": "Tooling",
+    "duration": "6 min",
+    "description": "Debunking common assumptions and offering a framework for getting it right.",
+    "publishedDate": "January 14, 2026",
+    "author": "Aetherfield Team",
+    "intro": "Carbon accounting is no longer a “nice-to-have” for mission-driven organizations—it’s a strategic necessity. But while awareness has grown, clarity hasn’t always followed. Between evolving standards, patchy data, and inconsistent terminology, many teams are still unsure where to begin, what’s required, or how to do it well.Let’s clear the fog.",
+    "thumbnail": "ArticleThumbnails/CarbonAccounting.png",
+    "content": []
+  },
+  {
+    "id": "seeing-clearly-designing-feedback-loops",
+    "title": "Seeing Clearly: Designing Feedback Loops for Sustainable Growth",
+    "details": "Strategy",
+    "duration": "4 min",
+    "description": "Building responsive systems that keep sustainability strategy adaptive and actionable.",
+    "publishedDate": "December 2, 2025",
+    "author": "Aetherfield Team",
+    "intro": "Climate strategy isn’t static—it’s dynamic, iterative, and shaped by feedback. Yet many sustainability teams operate without the tools to observe, learn, and adapt in real time. To grow sustainably, organizations need loops, not lines. Let’s explore how reflection systems can unlock smarter, faster, more resilient progress.",
+    "thumbnail": "ArticleThumbnails/SeeingClearly.png",
+    "content": []
+  }
+]

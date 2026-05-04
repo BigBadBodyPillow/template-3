@@ -9,15 +9,6 @@
     0 4px 6px -4px rgba(0, 0, 0, 0.12), 0 8px 8px -4px rgba(0, 0, 0, 0.08);
 }
 
-.p-bold {
-  font-weight: 500;
-}
-.p2 {
-  line-height: 120%;
-  font-family: var(--heading);
-  letter-spacing: -4%;
-}
-
 :root {
   --text: #000000;
   --text-2: #6c6c6c;
@@ -118,6 +109,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 a,
 button,
@@ -160,6 +152,13 @@ h4 {
   margin: 20px 0;
   letter-spacing: -3%;
 }
+h5 {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -2%;
+}
+
 p {
   margin: 0;
   font-family: var(--sans);
@@ -167,6 +166,21 @@ p {
   font-size: 1.25rem;
   letter-spacing: -2%;
 }
+.p-bold {
+  font-weight: 500;
+}
+.p2 {
+  line-height: 120%;
+  font-family: var(--heading);
+  letter-spacing: -4%;
+}
+.articleP {
+  line-height: 140%;
+  font-family: var(--heading);
+  letter-spacing: -4%;
+  font-size: 1.25rem;
+}
+
 a {
   font-family: var(--sans);
   line-height: 120%;

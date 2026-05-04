@@ -6,6 +6,7 @@ import Home from "~/Pages/Home";
 import Journal from "~/Pages/Journal";
 import About from "~/Pages/About";
 import Careers from "~/Pages/Careers";
+import Article from "./Pages/Article";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/journal" element={<Journal />} />
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/article/:id" element={<Article />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
       </BrowserRouter>
